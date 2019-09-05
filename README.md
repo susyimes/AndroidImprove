@@ -1,1 +1,3 @@
 # AndroidImprove
+
+gradle assembleDebug --stacktrace
