@@ -2,6 +2,7 @@
 
 gradle assembleDebug --stacktrace
 gradlew compileDebug --stacktrace 
+compile DebugJavaWithJavac
 
 adb logcat *:E
 
