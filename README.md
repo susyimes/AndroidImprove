@@ -1,6 +1,7 @@
 # AndroidImprove
 
 gradle assembleDebug --stacktrace
+gradlew compileDebug --stacktrace 
 
 adb logcat *:E
 
