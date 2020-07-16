@@ -1,3 +1,9 @@
+# Performance
+https://github.com/didi/booster
+# APK SIZE
+https://github.com/facebook/redex
+https://tech.meituan.com/2017/04/07/android-shrink-overall-solution.html
+
 # AndroidImprove
 
 gradle assembleDebug --stacktrace
