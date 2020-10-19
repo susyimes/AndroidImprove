@@ -88,4 +88,24 @@ if exist "%swt_path%" goto SetPath
 
 call "%java_exe%" -Xmx512m "-Djava.ext.dirs=%frameworkdir%;%swt_path%" -Dcom.android.monkeyrunner.bindir=..\..\platform-tools -jar %jarpath% %*
 
+# 无嵌入maxheight
+  <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/express_detail_list_parent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="22dp"
+                app:layout_constraintHeight_default="wrap"
+                app:layout_constraintHeight_max="300dp"
+                app:layout_constraintTop_toBottomOf="@+id/title">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/express_detail_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="18dp"
+                    app:goodsItemExList="@{viewModel.goods}"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
 
