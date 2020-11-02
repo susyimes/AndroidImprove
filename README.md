@@ -107,5 +107,16 @@ call "%java_exe%" -Xmx512m "-Djava.ext.dirs=%frameworkdir%;%swt_path%" -Dcom.and
                     app:goodsItemExList="@{viewModel.goods}"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+            
+            
+ # ConstraintLayout 2.0
+ ConstraintLayoutStates 多状态视图管理
+ Layer = Group+
+ Flow = chainlayout
+ Motion Layout = stepful animation view
+ https://medium.com/google-developers/defining-motion-paths-in-motionlayout-6095b874d37
+ multis Helper
+ 
+ 
 
 
