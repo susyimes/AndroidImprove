@@ -122,6 +122,22 @@ call "%java_exe%" -Xmx512m "-Djava.ext.dirs=%frameworkdir%;%swt_path%" -Dcom.and
  
  multis Helper
  
+ #  Code Review
+ 
+ Code review step 1
+
+ Clean code , Avoid null-pointer .
+
+
+ Code review step 2
+ 
+ Logistics check , Performance check .
+ 
+
+ Code review step 3
+ 
+ Optimize code.
+ 
  
 
 
