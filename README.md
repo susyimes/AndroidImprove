@@ -137,6 +137,15 @@ call "%java_exe%" -Xmx512m "-Djava.ext.dirs=%frameworkdir%;%swt_path%" -Dcom.and
  Code review step 3
  
  Optimize code , Experience improve .
+
+# Kotlin
+takewhile 
+tailrec尾递归优化
+tailrec fun findListNode(head: ListNode?, value: Int): ListNode? {
+    head ?: return null
+    if (head.value == value) return head
+    return findListNode(head.next, value)
+}
  
  
 
