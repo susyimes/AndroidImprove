@@ -25,6 +25,7 @@ adb shell monkey -p cn.com.bjx.bjxtalents --pct-syskeys 0  --pct-majornav 0 --pc
 # monkeyrunner
 setx -m ANDROID_SWT "C:\Users\pang\AppData\Local\Android\Sdk\tools\lib\x86_64"
 
+https://stackoverflow.com/questions/52815413/monkeyrunner-noclassdeffounderror-com-android-chimpchat-chimpchat
 @echo off
 rem Copyright (C) 2010 The Android Open Source Project
 rem
