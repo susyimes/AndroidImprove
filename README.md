@@ -157,5 +157,18 @@ Note the MainScope() is CoroutineScope(SupervisorJob() + Dispatchers.Main).
 如中所述SupervisorJob
 一个孩子的失败或取消不会导致主管工作失败，也不会影响其其他孩子，因此主管可以实施自定义策略来处理其孩子的失败    
 
+协程内顺序执行 order sample
+GlobalScope.launch(Dispatchers.Unconfined){
+  var token = GlobalScope.async(Dispatchers.Unconfined) {
+    return@async getToken()
+   }.await()
+
+  var response = GlobalScope.async(Dispatchers.Unconfined) {
+    return@async getResponse(token)
+  }.await()
+
+  setText(response)
+}
+
 
 
