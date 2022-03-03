@@ -175,6 +175,20 @@ GlobalScope.launch(Dispatchers.Unconfined){
 mutex这个标记用来保证在任一时刻，只能有一个线程访问该对象  
 用于不同coroutineScope作用域,保证挂起函数的顺序执行  
 
+class UserRepository {  
+   private val DB = Dispatchers.IO.limitedParallelism(10)  
+
+   suspend fun getUserById(userId: Int): User? = withContext(DB) {  
+       executeQuery("SELECT * FROM users WHERE id = $1", userId).singleOrNull()  
+   }  
+}  
+
+ /**
+     * [CoroutineDispatcher.limitedParallelism] use for Dispatchers.IO or Dispatchers.Default,Dispatchers.Main usually contains that limit
+     * [suspend] in same scope by order execute
+     * [Mutex] use for different coroutineScope suspend function in order execute
+     */
+
 
 
 
