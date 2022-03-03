@@ -168,7 +168,13 @@ GlobalScope.launch(Dispatchers.Unconfined){
   }.await()  
 
   setText(response)  
-}  
+}   
+
+同一协程里的suspend可以保证顺序  
+
+mutex这个标记用来保证在任一时刻，只能有一个线程访问该对象  
+用于不同coroutineScope作用域,保证挂起函数的顺序执行  
+
 
 
 
