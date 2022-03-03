@@ -189,7 +189,7 @@ class UserRepository {
      * [Mutex] use for different coroutineScope suspend function in order execute  
      */  
 
-imitedParallelism对一个scope里协程被阻塞时会按顺序执行。
+imitedParallelism对一个scope里协程被阻塞时会按顺序执行。  
 mutex对不同scope的挂起函数做顺序执行。
 
 
