@@ -192,5 +192,12 @@ class UserRepository {
 imitedParallelism对一个scope里协程被阻塞时会按顺序执行。  
 mutex对不同scope的挂起函数做顺序执行。
 
+logcat: Unexpected EOF!
+    
+    This means that either the device shut down, logd crashed, or this instance of logcat was unable to read log
+    messages as quickly as they were being produced.
+    
+    If you have enabled significant logging, look into using the -G option to increase log buffer sizes
+Logcat不输出日志：检查开发者选项日志记录器缓冲大小设置多一些
 
 
