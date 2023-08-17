@@ -197,10 +197,11 @@ logcat: Unexpected EOF!
     This means that either the device shut down, logd crashed, or this instance of logcat was unable to read log
     messages as quickly as they were being produced.
 
-https://github.com/skylot/jadx
-使用Jadx工具，通过Jadx工具对打包好的包进行解析获取md5[图片]
     
     If you have enabled significant logging, look into using the -G option to increase log buffer sizes
-Logcat不输出日志：检查开发者选项日志记录器缓冲大小设置多一些
+Logcat不输出日志：检查开发者选项日志记录器缓冲大小设置多一些  
+
+https://github.com/skylot/jadx
+使用Jadx工具，通过Jadx工具对打包好的包进行解析获取md5[图片]
 
 
